@@ -1,0 +1,19 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background-color: #fff1f9;
+    text-align: center;
+}
+
+.game-container {
+    margin-top: 50px;
+    text-shadow: 0px 0px 7px pink;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+#scoreboard {
+    margin-top: 20px;
+}
