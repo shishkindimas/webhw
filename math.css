@@ -1,19 +1,83 @@
+/* Оформление для общего тела документа */
 body {
-    font-family: Comic Sans MS, sans-serif;
-    background-color: #fff1f9;
-    text-align: center;
+    font-family: 'Arial', sans-serif; /* Шрифт для всего документа */
+    background-color: #f9f9f9; /* Цвет фона */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы */
 }
 
+/* Оформление контейнера игры */
 .game-container {
-    margin-top: 50px;
-    text-shadow: 0px 0px 7px pink;
+    width: 80%;
+    max-width: 600px; /* Ограничиваем максимальную ширину */
+    margin: 50px auto; /* Центрируем контейнер по горизонтали */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #fff; /* Цвет фона контейнера */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень вокруг контейнера */
 }
 
+/* Оформление заголовков */
+h1 {
+    text-align: center; /* Центрирование заголовка */
+    color: #333; /* Цвет текста заголовка */
+}
+
+h2, h3 {
+    text-align: left; /* Выравнивание влево */
+    color: #666; /* Цвет текста для 2- и 3-уровневых заголовков */
+}
+
+/* Оформление вопроса */
+#question {
+    font-size: 1.5em; /* Увеличенный размер шрифта */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    text-align: center; /* Центрирование текста вопроса */
+}
+
+/* Оформление поля ввода */
+#answer {
+    width: 96%; /* Полная ширина */
+    padding: 10px; /* Внутренние отступы */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    border: 2px solid #ddd; /* Граница для ввода */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 1em; /* Размер шрифта */
+}
+
+/* Оформление кнопок */
+button {
+    width: 100%; /* Полная ширина */
+    padding: 10px; /* Внутренние отступы */
+    background-color: #ff69b4; /* Цвет фона кнопок */
+    color: #000000; /* Цвет текста кнопок */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    font-size: 1em; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+/* Оформление кнопки при наведении */
+button:hover {
+    background-color: #ff1493; /* Меняем цвет при наведении */
+}
+
+/* Оформление результатов и счетчиков */
 #result {
-    margin-top: 20px;
-    font-size: 50px;
+    text-align: center; /* Центрирование текста результата */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    font-size: 1.2em; /* Немного увеличенный размер текста */
 }
 
 #scoreboard {
-    margin-top: 20px;
+    margin-top: 20px; /* Отступ сверху */
+    text-align: left; /* Выравнивание влево */
+    font-size: 1.1em; /* Размер шрифта для счетчика */
 }
+
+/* Оформление кнопки перезапуска, если она видима */
+#restart {
+    margin-top: 20px; /* Отступ сверху */
+}
+

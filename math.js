@@ -23,7 +23,7 @@ function startGame() {
 
     timer = setInterval(() => {
         timeElapsed++;
-        document.getElementById('time').innerText = `Time left: ${timeElapsed}`;
+        document.getElementById('time').innerText = `Времени прошло: ${timeElapsed}`;
     }, 1000);
 
     askQuestion();
@@ -97,7 +97,7 @@ document.getElementById('submit').addEventListener('click', () => {
     if ((userAnswer === 'undefined' && currentQuestionAnswer === 'undefined') || parseInt(userAnswer) === currentQuestionAnswer) { 
         correctCount++;
         document.getElementById('result').innerHTML =
-            "Correct!";
+            "Верно!";
 
         setTimeout(() => { 
             document.getElementById('result').innerHTML = ''; 
@@ -109,7 +109,7 @@ document.getElementById('submit').addEventListener('click', () => {
     } else {
         incorrectCount++;
         document.getElementById('result').innerHTML =
-            "Nope! Try again!";
+            "Неверно, попробуй еще раз!";
 
         setTimeout(() => { 
             document.getElementById('result').innerHTML = ''; 
